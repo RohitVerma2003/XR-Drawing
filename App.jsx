@@ -21,6 +21,7 @@ import { NavigationContainer } from '@react-navigation/native'
 import LiveCamera from './src/screens/LiveCamera'
 import { GestureHandlerRootView } from 'react-native-gesture-handler'
 import Completed from './src/screens/Completed'
+import Settings from './src/screens/Settings'
 
 const Stack = createNativeStackNavigator()
 
@@ -38,6 +39,7 @@ const StackNavigator = () => {
       <Stack.Screen name='Draw' component={Draw} />
       <Stack.Screen name='LiveCamera' component={LiveCamera} options={{headerShown : false}}/>
       <Stack.Screen name='Completed' component={Completed} />
+      <Stack.Screen name='Settings' component={Settings} />
     </Stack.Navigator>
   )
 }
